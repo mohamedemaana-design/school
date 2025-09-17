@@ -1,0 +1,128 @@
+/* Basic resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+/* Centered login container with colorful background */
+.centered-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  color: #fff;
+  text-align: center;
+}
+
+.colorful-bg {
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+  max-width: 400px;
+  margin: auto;
+  padding: 40px 30px;
+}
+
+#login-form input {
+  width: 100%;
+  padding: 14px;
+  margin: 15px 0;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  outline: none;
+}
+
+#login-form input:focus {
+  box-shadow: 0 0 8px #a777e3;
+}
+
+#login-form button {
+  width: 100%;
+  padding: 14px;
+  background-color: #fff;
+  color: #6e8efb;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#login-form button:hover {
+  background-color: #dcd6f7;
+}
+
+.error-msg {
+  color: #ffb3b3;
+  font-weight: bold;
+  height: 18px;
+}
+
+/* Hide app container initially */
+.hidden {
+  display: none;
+}
+
+/* App container styles */
+header {
+  background: #6e8efb;
+  padding: 10px 20px;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+nav ul li {
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li:hover {
+  background-color: #a777e3;
+}
+
+main#content {
+  padding: 30px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  min-height: 400px;
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+p {
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media(max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+  }
+}

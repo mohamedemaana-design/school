@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>School Portal Login</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div id="login-container" class="centered-container colorful-bg">
+    <h2>School Portal Login</h2>
+    <form id="login-form">
+      <input type="text" id="username" placeholder="Username" autocomplete="off" required />
+      <input type="password" id="password" placeholder="Password" autocomplete="off" required />
+      <button type="submit">Login</button>
+      <p id="login-error" class="error-msg"></p>
+    </form>
+  </div>
+
+  <div id="app-container" class="hidden">
+    <header>
+      <nav>
+        <ul id="menu">
+          <li data-page="attendance">Attendance</li>
+          <li data-page="material">Material</li>
+          <li data-page="marks">Marks</li>
+          <li data-page="timetable">Timetable</li>
+          <li data-page="feedback">Feedback</li>
+          <li id="logout-btn" style="margin-left:auto;cursor:pointer;color:#fff;">Logout</li>
+        </ul>
+      </nav>
+    </header>
+    <main id="content">
+      <h2>Welcome to the School Portal</h2>
+      <p>Select a menu option to get started.</p>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
